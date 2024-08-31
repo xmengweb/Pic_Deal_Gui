@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <title>图像分析系统</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <ul class="toolBar">
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">文件</a>
+      <div class="dropdown-content">
+        <label for="file">打开</label>
+        <input type="file" id="file">
+        <a href="#" id="save">保存</a>
+        <a href="#" id="close">关闭</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">几何变换</a>
+      <div class="dropdown-content">
+        <a href="#" id="scaling">缩放</a>
+        <a href="#" id="translation">平移</a>
+        <a href="#" id="rotation">旋转</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn" id="graying">灰度化</a>
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">二值化</a>
+      <div class="dropdown-content">
+        <a href="#" id="easybinaryzation">简单阈值二值化</a>
+        <a href="#" id="binaryzation">自适应阈值二值化</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">直方图处理</a>
+      <div class="dropdown-content">
+        <a href="#" id="histogramfind">直方图查看</a>
+        <a href="#" id="histogramequal">直方图均衡化</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">图像梯度</a>
+      <div class="dropdown-content">
+        <a href="#" id="sobel">Sobel算子</a>
+        <a href="#" id="Laplacian">Laplacian算子</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">平滑图像</a>
+      <div class="dropdown-content">
+        <a href="#" id="Convolution2D">二维卷积</a>
+        <a href="#" id="blur">均值滤波</a>
+        <a href="#" id="Gaussblur">高斯滤波</a>
+        <a href="#" id="medianBlur">中值模糊</a>
+        <a href="#" id="bilateralFilter">双边滤波</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">图像变换</a>
+      <div class="dropdown-content">
+        <a href="#" id="dft">傅里叶变换</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn" id="edge">边缘检测</a>
+      <div class="dropdown-content">
+        <a href="#" id="Canny">Canny边缘检测</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">目标检测</a>
+      <div class="dropdown-content">
+        <a href="#" id="face">人脸检测</a>
+      </div>
+    </li>
+  </ul>
+
+  <div class="output">
+    <img src="" alt="" id="inputImg">
+    <canvas id="canvasOutput"></canvas>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "guidemo",
+  "version": "1.0.0",
+  "description": "hello",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon --watch main.js --exec electron ."
+  },
+  "keywords": [],
+  "author": "xm",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.9"
+  }
+}
